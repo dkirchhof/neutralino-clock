@@ -1,0 +1,16 @@
+{
+  "name": "fsharp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "dotnet fable watch src --runWatch esbuild src/App.fs.js --bundle --sourcemap --outfile=resources/js/bundle.js",
+    "build": "esbuild src/App.fs.js --bundle --minify --outfile=resources/js/bundle.js && rm resources/js/bundle.js.map && neu build"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.5.0",
+    "esbuild": "^0.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

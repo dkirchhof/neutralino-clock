@@ -1,0 +1,17 @@
+# node stuff
+/node_modules
+
+# neutralino stuff
+/bin
+/dist
+
+# f# and fable stuff
+.config/
+src/**.fs.js
+src/.fable
+src/bin
+src/obj
+
+# bundle
+resources/js/bundle.js
+resources/js/bundle.js.map

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <WarningsAsErrors>25</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Bindings/Emotion.fs" />
+    <Compile Include="Theme/Theme.fs" />
+    <Compile Include="Theme/Icons.fs" />
+    <Compile Include="Utils/TimeUtils.fs" />
+    <Compile Include="Hooks/Hooks.fs" />
+    <Compile Include="Components/FirstUnderlined.fs" />
+    <Compile Include="Views/ModeSelector.fs" />
+    <Compile Include="Views/Stopwatch.fs" />
+    <Compile Include="Views/TimeInput.fs" />
+    <Compile Include="Views/Timer.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Feliz" Version="1.56.0" />
+  </ItemGroup>
+</Project>
